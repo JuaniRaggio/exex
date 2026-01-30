@@ -6,9 +6,36 @@ defmodule Calculadora do
   def suma(a, b) do
     IO.puts("Esta funcion retorna a + b = #{a} + #{b} = #{a + b}")
   end
+
+  def resta(a, b) do
+    a - b
+  end
+
+  def mult(a, b) do
+    a * b
+  end
+
+  # esto seria una forma 'no funcional' de hacerlo
+  # def div(a, b) do
+  #   if b == 0 do
+  #     return :inf
+  #   end
+  #   a / b
+  # end
+
+  # ***** Esta seria la forma mas funcional ***** #
+  # Se usa leading _ para parametros que no se usan
+  def div(_a, b) when b == 0 do
+    :inf
+  end
+
+  def div(a, b) do
+    a / b
+  end
+
+  # ********************************************* #
 end
 
-a = IO.gets("Ingrese a: ") |> String.trim |> String.to_integer
-b = IO.gets("Ingrese b: ") |> String.trim |> String.to_integer
-Calculadora.suma(a, b) |> IO.puts
-
+a = IO.gets("Ingrese a: ") |> String.trim() |> String.to_integer()
+b = IO.gets("Ingrese b: ") |> String.trim() |> String.to_integer()
+Calculadora.suma(a, b) |> IO.puts()
