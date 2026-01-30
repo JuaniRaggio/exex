@@ -13,7 +13,7 @@ $$
 f(x) = 
 \begin{cases}
  1 & x <= 0 \\
- x f(x - 1) & x > 0 \\
+ x . f(x - 1) & x > 0 \\
 \end{cases}
 $$
 
