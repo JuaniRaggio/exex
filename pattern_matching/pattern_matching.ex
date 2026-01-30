@@ -22,4 +22,3 @@
 # el siguiente caso si es correcto y a pasaria a ser 2
 {1, a, 3} = {1, 2, 3}
 
-
