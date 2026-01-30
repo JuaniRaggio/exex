@@ -1,7 +1,7 @@
 # Pattern Matching
 
-Siempre que llamamos a una funcion en elixir se intenta
-hacer pattern matching con los parametros y se intenta
+*Siempre que llamamos a una funcion en elixir se intenta
+hacer pattern matching* con los parametros y se intenta
 'matchear todo para que sea true', por lo tanto el siguiente
 codigo tambien seria valido
 
@@ -16,6 +16,10 @@ defmodule X do
     end
 end
 ```
+
+Notemos que es una mejora clara a comparacion de las guardas
+condicionales como when en caso de que querramos cubrir un
+caso particular
 
 > [!NOTE]
 > Lo que pasaria en este caso es que si llamamos a la funcion
